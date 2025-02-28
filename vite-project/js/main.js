@@ -1,4 +1,4 @@
-import '../style.css'
+import '../css/style.css'
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js'
 
@@ -26,15 +26,15 @@ const torus = new THREE.Mesh(geometry, material);
 scene.add(torus);
 const pointLight = new THREE.PointLight(0xffffff);
 pointLight.position.set(0,0,0);
-pointLight.intensity = 100;
+pointLight.intensity = 500;
 const ambientLight = new THREE.AmbientLight(0xffffff);
 
 scene.add(pointLight, ambientLight);
 
-//helpers
-const lightHelper = new THREE.PointLightHelper(pointLight);
-const gridHelper = new THREE.GridHelper(200, 50);
-scene.add(lightHelper, gridHelper);
+// //helpers
+// const lightHelper = new THREE.PointLightHelper(pointLight);
+// const gridHelper = new THREE.GridHelper(200, 50);
+// scene.add(lightHelper, gridHelper);
 
 const controls = new OrbitControls(camera, renderer.domElement);
 

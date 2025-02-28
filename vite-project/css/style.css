@@ -4,6 +4,11 @@ main {
     padding: 0;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 li, a, button {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 500;
@@ -17,7 +22,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%; 
+    padding: 20px 10%; 
     background-color: #262626;
 }
 
@@ -31,7 +36,7 @@ main {
     position:relative;
 }
 
-img.logo {
+.logo {
     cursor: pointer;
     margin-right:auto;
 }
@@ -54,13 +59,19 @@ img.logo {
 }
 
 button {
-    margin-left: 20px;
     padding: 9px 25px;
     background-color: rgba(0,136,169,1);
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    box-shadow: 0 0 8px rgba(5, 167, 208, 0.5);
+}
+.cta {
+    margin-left: 20px;
 }
 
 button:hover {
