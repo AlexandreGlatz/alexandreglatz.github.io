@@ -63,7 +63,7 @@ input, textarea {
     border-radius: 4px;
 }
 
-button {
+#send_btn {
     margin-top: 18px;
     letter-spacing: 1px;
     text-transform: uppercase;
