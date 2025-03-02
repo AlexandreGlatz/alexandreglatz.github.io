@@ -61,8 +61,8 @@ if(isset($_POST["send"]))
             <a href="index.html" class="logo"><img src="images/logox64.png" alt="logo"/></a>
             <nav>
                 <ul class="nav__links">
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="#">About</a></li>
                 </ul>
             </nav>
@@ -71,8 +71,6 @@ if(isset($_POST["send"]))
         </header>
         
         <div id="contact_form">
-
-
             <form action="" method="POST">
                 <h2>Contact Me</h2>
                 <label>First Name / Company</label>
