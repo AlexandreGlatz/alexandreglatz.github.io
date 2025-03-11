@@ -16,7 +16,7 @@ label, p {
 #contact_form {
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: 100px;
     flex-direction: column;
     margin-top: 100px;
 }

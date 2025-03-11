@@ -50,6 +50,7 @@ if(isset($_POST["send"]))
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+        <meta name="description" content="Contact Alexandre Glatz for your projects">
 		<link rel = "icon" type="images/png" href="images/logox32.png"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="stylesheet" href="css/style.css"/>

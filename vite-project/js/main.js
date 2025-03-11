@@ -2,9 +2,10 @@ import '../css/style.css'
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js'
-import { bool } from 'three/tsl';
 
 //init
+let windowWidth = window.innerWidth;
+let windowHeight = window.innerHeight;
 const scene = new THREE.Scene();
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -16,8 +17,8 @@ const renderer = new THREE.WebGLRenderer(
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
 
-camera.position.setZ(20);
-renderer.render(scene, camera);
+camera.position.set(0,10,20);
+camera.lookAt(0,0,0);
 
 //mesh loader
 
@@ -58,6 +59,19 @@ let control = 0.05;
 let goLeft = false;
 //loop
 
+function updateSize() {
+
+    if ( windowWidth != window.innerWidth || windowHeight != window.innerHeight ) {
+
+        windowWidth = window.innerWidth;
+        windowHeight = window.innerHeight;
+
+        renderer.setSize( windowWidth, windowHeight );
+
+    }
+
+}
+
 function oscillate(state, transform, value, control, cap1, cap2)
 {
 	const initValue = value;
@@ -90,6 +104,7 @@ function oscillate(state, transform, value, control, cap1, cap2)
 }
 function animate()
 {
+	updateSize();
 	requestAnimationFrame(animate);
 	//logoModel.scene.rotation.x += 0.001;
 	const values = oscillate(goDown, logoModel.scene.position.y, 0.01, control, 2, -3);
