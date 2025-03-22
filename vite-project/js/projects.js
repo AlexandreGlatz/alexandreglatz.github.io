@@ -1,23 +1,19 @@
-
 import * as THREE from 'three';
-
+import ExplodedObject from './explodedObjects.js'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 let canvas, renderer;
 const projectAmount = 3;
+const gltfLoader = new GLTFLoader();
 const scenes = [];
-
 init();
 
 function init() {
 
     canvas = document.getElementById( 'c' );
-
-    const geometries = [
-        new THREE.BoxGeometry( 1, 1, 1 ),
-        new THREE.SphereGeometry( 0.5, 12, 8 ),
-        new THREE.DodecahedronGeometry( 0.5 ),
-        new THREE.CylinderGeometry( 0.5, 0.5, 1, 12 )
+    const explodedObjects = [
+        new ExplodedObject("Planet", "../models/Project1/", 0, 3.0, new THREE.Vector3(0.0,1.0,0.0))
     ];
 
     const content = document.getElementById( 'content' );
@@ -34,7 +30,6 @@ function init() {
         sceneElement.id = "project" + (i + 1);
         sceneElement.style.width = window.innerWidth + "px";
         sceneElement.style.height = window.innerHeight + "px";
-        sceneElement.style.touchAction = "auto";
         element.appendChild( sceneElement );
         
         const scrollArrows = document.createElement('div');
@@ -84,19 +79,18 @@ function init() {
         controls.enableZoom = false;
         scene.userData.controls = controls;
 
-        // add one random mesh to each scene
-        const geometry = geometries[ geometries.length * Math.random() | 0 ];
+        // const geometry = explodedObjects;
 
-        const material = new THREE.MeshStandardMaterial( {
+        // const material = new THREE.MeshStandardMaterial( {
 
-            color: new THREE.Color().setHSL( Math.random(), 1, 0.75, THREE.SRGBColorSpace ),
-            roughness: 0.5,
-            metalness: 0,
-            flatShading: true
+        //     color: new THREE.Color().setHSL( Math.random(), 1, 0.75, THREE.SRGBColorSpace ),
+        //     roughness: 0.5,
+        //     metalness: 0,
+        //     flatShading: true
 
-        } );
-
-        scene.add( new THREE.Mesh( geometry, material ) );
+        // } );
+        // let mesh = new THREE.Mesh( geometry, material );
+        // scene.add( mesh );
 
         scene.add( new THREE.HemisphereLight( 0xaaaaaa, 0x444444, 3 ) );
 
