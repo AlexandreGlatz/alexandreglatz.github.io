@@ -1,4 +1,4 @@
-<script setup lang="js">
+<script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
 import Navigation from './components/Navigation.vue';
 </script>
