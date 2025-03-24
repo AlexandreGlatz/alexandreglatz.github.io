@@ -1,14 +1,15 @@
 <template>
     <div class="header-bg">
-        <header :class="{'scrolled-nav': scrollPosition}">
+        <header>
             <nav>
                 <div class="branding">
-                    <img src="../assets/logox32.png" alt="main logo">
+                    <router-link :to="{name: 'About'}"><img src="../assets/logox64.png" alt="main logo"></router-link>
                 </div>
                 <ul v-show="!mobile" class="navigation">
-                    <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
-                    <li><router-link class="link" :to="{name: ''}">About</router-link></li>
+                    <!-- <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li> -->
+                    <li><router-link class="link" :to="{name: 'About'}">About</router-link></li>
                     <li><router-link class="link" :to="{name: ''}">Projects</router-link></li>
+                    <li><router-link class="link" :to="{name: ''}">Blog</router-link></li>
                     <li><router-link class="link" :to="{name: ''}">Contact</router-link></li>
                 </ul>
                 <div class="icon">
@@ -16,9 +17,10 @@
                 </div>
                 <transition name="mobile-nav">
                     <ul v-show="mobileNav" class="dropdown-nav">
-                        <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
-                        <li><router-link class="link" :to="{name: ''}">About</router-link></li>
+                        <!-- <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li> -->
+                        <li><router-link class="link" :to="{name: 'About'}">About</router-link></li>
                         <li><router-link class="link" :to="{name: ''}">Projects</router-link></li>
+                        <li><router-link class="link" :to="{name: ''}">Blog</router-link></li>
                         <li><router-link class="link" :to="{name: ''}">Contact</router-link></li>
                     </ul>
                 </transition>
@@ -30,7 +32,6 @@
 <script lang="ts">
 
 interface ComponentState {
-  scrollPosition: boolean;
   mobile: boolean;
   mobileNav: boolean;
   windowWidth: number; // Use number instead of boolean for window width
@@ -41,7 +42,6 @@ export default {
   name: "navigation",
   data(): ComponentState {
     return {
-      scrollPosition: false,
       mobile: true,
       mobileNav: true,
       windowWidth: 1440,
@@ -76,7 +76,7 @@ export default {
 
 header {
     backdrop-filter:blur(15px);
-    background-color: rgba(15,16,50,1);
+    background: radial-gradient(ellipse at top, rgba(46,50,142,0.7), rgba(13,14,40,0.7));
     z-index: 99;
     width: 100%;
     top:0;
@@ -94,8 +94,8 @@ header {
       transition: .5s ease all;
       width: 100%;
       margin: 0 auto;
-      @media (min-width: 1140px) {
-          max-width: 1140px;
+      @media (min-width: 1000px) {
+          max-width: 1000px;
       }
 
       ul, 
@@ -168,7 +168,7 @@ header {
         flex-direction: column;
         position: fixed;
         width: 100%;
-        max-width: 250px;
+        max-width: 150px;
         height: 3000%;
         background-color: #fff;
         top: -16px;
