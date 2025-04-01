@@ -3,12 +3,12 @@
         <header>
             <nav>
                 <div class="branding">
-                    <router-link :to="{name: 'About'}"><img src="../assets/logox64.png" alt="main logo"></router-link>
+                    <router-link :to="{name: 'About'}"><img src="../../assets/logox64.png" alt="main logo" width="64" height="64"></router-link>
                 </div>
                 <ul v-show="!mobile" class="navigation">
                     <!-- <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li> -->
                     <li><router-link class="link" :to="{name: 'About'}">About</router-link></li>
-                    <li><router-link class="link" :to="{name: ''}">Projects</router-link></li>
+                    <li><router-link class="link" :to="{name: 'Projects'}">Projects</router-link></li>
                     <li><router-link class="link" :to="{name: ''}">Blog</router-link></li>
                     <li><router-link class="link" :to="{name: ''}">Contact</router-link></li>
                 </ul>
@@ -19,7 +19,7 @@
                     <ul v-show="mobileNav" class="dropdown-nav">
                         <!-- <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li> -->
                         <li><router-link class="link" :to="{name: 'About'}">About</router-link></li>
-                        <li><router-link class="link" :to="{name: ''}">Projects</router-link></li>
+                        <li><router-link class="link" :to="{name: 'Projects'}">Projects</router-link></li>
                         <li><router-link class="link" :to="{name: ''}">Blog</router-link></li>
                         <li><router-link class="link" :to="{name: ''}">Contact</router-link></li>
                     </ul>
@@ -34,7 +34,7 @@
 interface ComponentState {
   mobile: boolean;
   mobileNav: boolean;
-  windowWidth: number; // Use number instead of boolean for window width
+  windowWidth: number;
 }
 
 export default {

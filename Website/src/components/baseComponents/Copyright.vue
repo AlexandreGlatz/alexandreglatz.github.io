@@ -4,7 +4,7 @@ export default{}
 
 <template>
     <footer>
-        <p>© Alexandre Glatz 2025</p>
+        <p>© Alexandre Glatz 2025. All rights reserved.</p>
     </footer>
 </template>
 
