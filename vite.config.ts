@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue';
 export default defineConfig({
   plugins: [vue()],
   build: {
-    outDir: 'dist',  // Ensure this matches the outDir in tsconfig.json
+    outDir: './dist',  // Ensure this matches the outDir in tsconfig.json
   },
-  base: '/Website/',  // Set this to your repo name if deploying to GitHub Pages
+  base: '/alexandreglatz.github.io/',  // Set this to your repo name if deploying to GitHub Pages
 });
