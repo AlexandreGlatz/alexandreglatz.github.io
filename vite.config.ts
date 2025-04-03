@@ -7,5 +7,4 @@ export default defineConfig({
   build: {
     outDir: './dist',  // Ensure this matches the outDir in tsconfig.json
   },
-  base: '/alexandreglatz.github.io/',  // Set this to your repo name if deploying to GitHub Pages
 });
