@@ -14,7 +14,7 @@ if(isset($_POST["send"]))
             $message = "
             <p>You received a message from : <strong>".$email."</strong></p>
             <p><strong>Name / Company : </strong>".$name."</p>
-            <p><strong>Message : </strong".$message."</p>";
+            <p><strong>Message : </strong>".$message."</p>";
 
             $headers = "MIME-Version: 1.0" . "\r\n";
             $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";

@@ -21,8 +21,13 @@ export default {}
 }
 .label {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: center;
     padding: 0;
+    width: 50%
+
 }
 
 .label-text {   

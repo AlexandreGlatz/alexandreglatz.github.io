@@ -1,21 +1,23 @@
 <script lang="ts">
 import Category from '../baseComponents/Category.vue';
+import Copyright from '../baseComponents/Copyright.vue';
 import MyLink from '../baseComponents/Link.vue';
 import ProjectInformation from '../baseComponents/ProjectInformation.vue';
 
-const engine:Array<string> = ["Unity"]
-const tags:Array<string> = ["Unity", "2D", "farm", "game", "project"]
+const languages:Array<string> = ["C++", "hlsl"];
+const tags:Array<string> = ["DirectX", "DirectX12", "hlsl", "graphics", "shaders", "optimization", "Custom Engine"];
 export default{
-    name:'Aniseeds',
+    name:'Engine',
     components: {
         Category,
         ProjectInformation,
-        MyLink
+        MyLink,
+        Copyright
     },
     data() {
         return {
-            engine,
-            tags
+            tags,
+            languages
         }
     }
 }
@@ -25,33 +27,38 @@ export default{
     <div class="project-page">
         <div class="project-details">
             <div class="details-text">
-                <ProjectInformation title="Aniseeds">lorem jiegfg jifjez h uhru iui hrui hui hr uihrui hrui huir huih rui ruih rui hrui rui rhui rui rui uir uir hiur huir uir huir h</ProjectInformation>
+                <ProjectInformation title="DirectX12 Engine">This custom Engine was made in 3 weeks for a school project. We had to make an engine with the DirectX12 API. I was in charge of the graphics part and optimization. I had to create a render with DirectX and encapsulate it for my collaborators to use.<br>
+                So I created a whole architecture to manage the render pipeline with basic renders as 3d objects with colors. Then added shaders for texture and lighting.</ProjectInformation>
             </div>
             <div class="details-media">
                 <iframe class="trailer" width="350" height="197" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <img src="../../assets/Placeholder.png" alt="details-image" class="details-img" width="350" height="197"> 
-                <img src="../../assets/Placeholder.png" alt="details-image" class="details-img" width="350" height="197"> 
+                <img src="../../assets/Projects/Engine/Engine1.png" alt="details-image" class="details-img" width="350" height="197"> 
+                <img src="../../assets/Projects/Engine/Engine2.png" alt="details-image" class="details-img" width="350" height="197"> 
             </div>
         </div>
         <div class="bottom">
             <p class="link-pres">Also on :</p>
             <div class="link-container">
-                <MyLink name="Itch.io" link="https://strickster.itch.io/aniseeds" icon-class="fa-brands fa-itch-io"/>
-                <MyLink name="Github" link="https://github.com/AlexandreGlatz/GC_Unity" icon-class="fa-brands fa-github"/>
+                <MyLink name="Github" link="https://github.com/EliaMaillard-Salin/Custom-Engine" icon-class="fa-brands fa-github"/>
             </div>
-            <Category category-name="Engine" :tag-name="engine"/>
+            <Category category-name="Languages" :tag-name="languages"/> 
             <Category category-name="Tags" :tag-name="tags"/> 
         </div>
     </div>
+    <Copyright/>
 </template>
 
 <style lang="scss">
+
+.presentation {
+    margin-top: 20px;
+}
 .project-page {
     position: relative;
     display: block;
     font-size: 20px;
     font-weight: 700;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     margin-bottom: -50px;
     margin-top: 200px;
@@ -119,6 +126,7 @@ export default{
 
 .article-text {
     text-align: center;
+    margin-top: 20px;
     @media (min-width: 1000px) {
         max-width: 1000px;
         text-align: left;

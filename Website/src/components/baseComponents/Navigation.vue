@@ -10,7 +10,7 @@
                     <li><router-link class="link" :to="{name: 'About'}">About</router-link></li>
                     <li><router-link class="link" :to="{name: 'Projects'}">Projects</router-link></li>
                     <li><router-link class="link" :to="{name: ''}">Blog</router-link></li>
-                    <li><router-link class="link" :to="{name: ''}">Contact</router-link></li>
+                    <li><router-link class="link-contact" :to="{name: 'Contact'}">Contact</router-link></li>
                 </ul>
                 <div class="icon">
                     <i @click="toggleMobileNavFunc" v-show="mobile" class="fa-solid fa-bars" :class="{'icon-active fa-solid fa-bars-staggered' : mobileNav}"></i>
@@ -21,7 +21,7 @@
                         <li><router-link class="link" :to="{name: 'About'}">About</router-link></li>
                         <li><router-link class="link" :to="{name: 'Projects'}">Projects</router-link></li>
                         <li><router-link class="link" :to="{name: ''}">Blog</router-link></li>
-                        <li><router-link class="link" :to="{name: ''}">Contact</router-link></li>
+                        <li><router-link class="link-contact" :to="{name: 'Contact'}">Contact</router-link></li>
                     </ul>
                 </transition>
             </nav>
@@ -106,6 +106,21 @@ header {
           text-decoration: none;
       }
 
+      .link-contact {
+        border-radius: 50px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #0095FF;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: 0.5s ease all;
+      }
+
+      .link-contact:hover {
+        box-shadow: 0 0 15px rgba(0, 149, 255, 0.5);
+      }
+
       li {
           text-transform: uppercase;
           padding: 16px;
@@ -178,6 +193,10 @@ header {
           margin-left: 0;
           .link {
             color: #141641;
+          }
+
+          .link-contact {
+            margin-left: -20px;
           }
         }
       }

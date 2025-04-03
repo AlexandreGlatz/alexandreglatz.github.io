@@ -6,6 +6,7 @@ import Aniseeds from "../components/Projects/Aniseeds.vue";
 import ICF from "../components/Projects/ICF.vue";
 import Read from "../components/Projects/Read.vue";
 import Engine from "../components/Projects/Engine.vue";
+import Contact from "../components/pageComponents/Contact.vue";
 
 const routes = [
     //Main pages
@@ -25,6 +26,13 @@ const routes = [
         name: "Projects",
         component: Projects
     },
+
+    {
+        path: "/contact",
+        name: "Contact",
+        component: Contact
+    },
+
 
     //Projects
     {

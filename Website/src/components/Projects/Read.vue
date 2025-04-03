@@ -25,19 +25,18 @@ export default{
     <div class="project-page">
         <div class="project-details">
             <div class="details-text">
-                <ProjectInformation title="Aniseeds">lorem jiegfg jifjez h uhru iui hrui hui hr uihrui hrui huir huih rui ruih rui hrui rui rhui rui rui uir uir hiur huir uir huir h</ProjectInformation>
+                <ProjectInformation title="Read">"Read" is a platformer game designed for the cozy fall 2023 Game Jam, it was made to be chill and easy to play, I strongly advise to visit every bit of the game.<br>You will live some adventures through a strange book you found in a lone library</ProjectInformation>
             </div>
             <div class="details-media">
                 <iframe class="trailer" width="350" height="197" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <img src="../../assets/Placeholder.png" alt="details-image" class="details-img" width="350" height="197"> 
-                <img src="../../assets/Placeholder.png" alt="details-image" class="details-img" width="350" height="197"> 
+                <img src="../../assets/Projects/Read/read1.png" alt="details-image" class="details-img" width="350" height="197"> 
+                <img src="../../assets/Projects/Read/read2.png" alt="details-image" class="details-img" width="350" height="197"> 
             </div>
         </div>
         <div class="bottom">
             <p class="link-pres">Also on :</p>
             <div class="link-container">
-                <MyLink name="Itch.io" link="https://strickster.itch.io/aniseeds" icon-class="fa-brands fa-itch-io"/>
-                <MyLink name="Github" link="https://github.com/AlexandreGlatz/GC_Unity" icon-class="fa-brands fa-github"/>
+                <MyLink name="Itch.io" link="https://strickster.itch.io/read" icon-class="fa-brands fa-itch-io"/>
             </div>
             <Category category-name="Engine" :tag-name="engine"/>
             <Category category-name="Tags" :tag-name="tags"/> 
