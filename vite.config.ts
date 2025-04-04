@@ -7,4 +7,9 @@ export default defineConfig({
   build: {
     outDir: './dist',  // Ensure this matches the outDir in tsconfig.json
   },
+  resolve: {
+    alias: {
+      'vue': 'vue/dist/vue.esm-bundler.js'
+    }
+  },
 });
