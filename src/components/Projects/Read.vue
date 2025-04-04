@@ -25,7 +25,8 @@ export default{
     <div class="project-page">
         <div class="project-details">
             <div class="details-text">
-                <ProjectInformation title="Read">"Read" is a platformer game designed for the cozy fall 2023 Game Jam, it was made to be chill and easy to play, I strongly advise to visit every bit of the game.<br>You will live some adventures through a strange book you found in a lone library</ProjectInformation>
+                <ProjectInformation title="Read"><q>Read</q> is a platformer game designed for the cozy fall 2023 Game Jam, it was made to be chill and easy to play, I strongly advise to visit every bit of the game.<br>You will live some adventures through a strange book you found in a lonely library.
+                It is a project that I made alone on TIC-80.</ProjectInformation>
             </div>
             <div class="details-media">
                 <iframe class="trailer" width="350" height="197" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

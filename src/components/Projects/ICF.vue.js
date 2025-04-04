@@ -1,8 +1,9 @@
 import Category from '../baseComponents/Category.vue';
 import MyLink from '../baseComponents/Link.vue';
 import ProjectInformation from '../baseComponents/ProjectInformation.vue';
-const engine = ["Unity"];
-const tags = ["Unity", "2D", "farm", "game", "project"];
+const engine = ["Unreal Engine"];
+const languages = ["C++"];
+const tags = ["Unreal Engine 5", "Unreal Engine", "VFX", "spells", "C++"];
 export default (await import('vue')).defineComponent({
     name: 'Aniseeds',
     components: {
@@ -13,7 +14,8 @@ export default (await import('vue')).defineComponent({
     data() {
         return {
             engine,
-            tags
+            tags,
+            languages
         };
     }
 });
@@ -40,12 +42,13 @@ const __VLS_0 = {}.ProjectInformation;
 /** @type {[typeof __VLS_components.ProjectInformation, typeof __VLS_components.ProjectInformation, ]} */ ;
 // @ts-ignore
 const __VLS_1 = __VLS_asFunctionalComponent(__VLS_0, new __VLS_0({
-    title: "Aniseeds",
+    title: "I cast fireball !!",
 }));
 const __VLS_2 = __VLS_1({
-    title: "Aniseeds",
+    title: "I cast fireball !!",
 }, ...__VLS_functionalComponentArgsRest(__VLS_1));
 __VLS_3.slots.default;
+__VLS_asFunctionalElement(__VLS_intrinsicElements.q, __VLS_intrinsicElements.q)({});
 var __VLS_3;
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({
     ...{ class: "details-media" },
@@ -112,24 +115,35 @@ const __VLS_12 = {}.Category;
 /** @type {[typeof __VLS_components.Category, ]} */ ;
 // @ts-ignore
 const __VLS_13 = __VLS_asFunctionalComponent(__VLS_12, new __VLS_12({
-    categoryName: "Engine",
-    tagName: (__VLS_ctx.engine),
+    categoryName: "Languages",
+    tagName: (__VLS_ctx.languages),
 }));
 const __VLS_14 = __VLS_13({
-    categoryName: "Engine",
-    tagName: (__VLS_ctx.engine),
+    categoryName: "Languages",
+    tagName: (__VLS_ctx.languages),
 }, ...__VLS_functionalComponentArgsRest(__VLS_13));
 const __VLS_16 = {}.Category;
 /** @type {[typeof __VLS_components.Category, ]} */ ;
 // @ts-ignore
 const __VLS_17 = __VLS_asFunctionalComponent(__VLS_16, new __VLS_16({
+    categoryName: "Engine",
+    tagName: (__VLS_ctx.engine),
+}));
+const __VLS_18 = __VLS_17({
+    categoryName: "Engine",
+    tagName: (__VLS_ctx.engine),
+}, ...__VLS_functionalComponentArgsRest(__VLS_17));
+const __VLS_20 = {}.Category;
+/** @type {[typeof __VLS_components.Category, ]} */ ;
+// @ts-ignore
+const __VLS_21 = __VLS_asFunctionalComponent(__VLS_20, new __VLS_20({
     categoryName: "Tags",
     tagName: (__VLS_ctx.tags),
 }));
-const __VLS_18 = __VLS_17({
+const __VLS_22 = __VLS_21({
     categoryName: "Tags",
     tagName: (__VLS_ctx.tags),
-}, ...__VLS_functionalComponentArgsRest(__VLS_17));
+}, ...__VLS_functionalComponentArgsRest(__VLS_21));
 /** @type {__VLS_StyleScopedClasses['project-page']} */ ;
 /** @type {__VLS_StyleScopedClasses['project-details']} */ ;
 /** @type {__VLS_StyleScopedClasses['details-text']} */ ;

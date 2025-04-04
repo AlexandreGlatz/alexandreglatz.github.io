@@ -3,8 +3,9 @@ import Category from '../baseComponents/Category.vue';
 import MyLink from '../baseComponents/Link.vue';
 import ProjectInformation from '../baseComponents/ProjectInformation.vue';
 
-const engine:Array<string> = ["Unity"]
-const tags:Array<string> = ["Unity", "2D", "farm", "game", "project"]
+const engine:Array<string> = ["Unreal Engine"]
+const languages:Array<string> = ["C++"]
+const tags:Array<string> = ["Unreal Engine 5", "Unreal Engine", "VFX", "spells", "C++"]
 export default{
     name:'Aniseeds',
     components: {
@@ -15,7 +16,8 @@ export default{
     data() {
         return {
             engine,
-            tags
+            tags,
+            languages
         }
     }
 }
@@ -25,7 +27,9 @@ export default{
     <div class="project-page">
         <div class="project-details">
             <div class="details-text">
-                <ProjectInformation title="Aniseeds">lorem jiegfg jifjez h uhru iui hrui hui hr uihrui hrui huir huih rui ruih rui hrui rui rhui rui rui uir uir hiur huir uir huir h</ProjectInformation>
+                <ProjectInformation title="I cast fireball !!"><q>I cast fireball</q> is a VR project in which the player has to shoot towards enemies with magic powers. You will have multiple powers to play around with, 
+                    from very precise spells to huge area of effects, choose the one that corresponds you best. I am working alone on thi project it is made on Unral Engine 5 all VFXs are made by me. 
+                </ProjectInformation>
             </div>
             <div class="details-media">
                 <iframe class="trailer" width="350" height="197" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -39,6 +43,7 @@ export default{
                 <MyLink name="Itch.io" link="https://strickster.itch.io/aniseeds" icon-class="fa-brands fa-itch-io"/>
                 <MyLink name="Github" link="https://github.com/AlexandreGlatz/GC_Unity" icon-class="fa-brands fa-github"/>
             </div>
+            <Category category-name="Languages" :tag-name="languages"/>
             <Category category-name="Engine" :tag-name="engine"/>
             <Category category-name="Tags" :tag-name="tags"/> 
         </div>
