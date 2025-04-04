@@ -4,7 +4,7 @@ import vue from '@vitejs/plugin-vue';
 export default defineConfig({
     plugins: [vue()],
     build: {
-        outDir: './dist', // Ensure this matches the outDir in tsconfig.json
+        outDir: './docs', // Ensure this matches the outDir in tsconfig.json
     },
     resolve: {
         alias: {
