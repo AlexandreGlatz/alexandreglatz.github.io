@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [vue()],
   build: {
     outDir: './docs',  // Ensure this matches the outDir in tsconfig.json
+    assetsInlineLimit: 0,
   },
   resolve: {
     alias: {

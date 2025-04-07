@@ -58,7 +58,7 @@ __VLS_asFunctionalElement(__VLS_intrinsicElements.iframe, __VLS_intrinsicElement
     ...{ class: "trailer" },
     width: "350",
     height: "197",
-    src: "https://www.youtube.com/embed/tgbNymZ7vqY",
+    src: "https://www.youtube.com/embed/jFl7T8v4fHE?autoplay=1&mute=1&loop=1&controls=0",
     frameborder: "0",
     allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
     allowfullscreen: true,

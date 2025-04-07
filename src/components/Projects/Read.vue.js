@@ -62,7 +62,7 @@ __VLS_asFunctionalElement(__VLS_intrinsicElements.iframe, __VLS_intrinsicElement
     allowfullscreen: true,
 });
 __VLS_asFunctionalElement(__VLS_intrinsicElements.img, __VLS_intrinsicElements.img)({
-    src: "../../assets/Projects/Read/read1.png",
+    src: "../../assets/Projects/Read/read.png",
     alt: "details-image",
     ...{ class: "details-img" },
     width: "350",

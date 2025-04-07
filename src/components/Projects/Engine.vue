@@ -31,7 +31,7 @@ export default{
                 So I created a whole architecture to manage the render pipeline with basic renders as 3d objects with colors. Then added shaders for texture and lighting.</ProjectInformation>
             </div>
             <div class="details-media">
-                <iframe class="trailer" width="350" height="197" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="trailer" width="350" height="197" src="https://www.youtube.com/embed/jFl7T8v4fHE?autoplay=1&mute=1&loop=1&controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <img src="../../assets/Projects/Engine/Engine1.png" alt="details-image" class="details-img" width="350" height="197"> 
                 <img src="../../assets/Projects/Engine/Engine2.png" alt="details-image" class="details-img" width="350" height="197"> 
             </div>
