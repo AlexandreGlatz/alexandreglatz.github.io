@@ -30,7 +30,7 @@ export default{
             </div>
             <div class="details-media">
                 <iframe class="trailer" width="350" height="197" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <img src="../../assets/Projects/Read/read.png" alt="details-image" class="details-img" width="350" height="197"> 
+                <img src="../../assets/Projects/Read/read1.png" alt="details-image" class="details-img" width="350" height="197"> 
                 <img src="../../assets/Projects/Read/read2.png" alt="details-image" class="details-img" width="350" height="197"> 
             </div>
         </div>
