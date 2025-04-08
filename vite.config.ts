@@ -4,7 +4,7 @@ import { resolve } from 'path';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/alexandreglatz.github.io/docs',
+  base: '/docs/',
   plugins: [vue()],
   build: {
     outDir: './docs',  // Ensure this matches the outDir in tsconfig.json
