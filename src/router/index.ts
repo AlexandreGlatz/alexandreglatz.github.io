@@ -16,19 +16,19 @@ const routes = [
         component: About
     },
     {
-        path: "/about",
+        path: "alexandreglatz.github.io/about",
         name: "About",
         component: About
     },
 
     {
-        path: "/projects",
+        path: "alexandreglatz.github.io/projects",
         name: "Projects",
         component: Projects
     },
 
     {
-        path: "/contact",
+        path: "alexandreglatz.github.io/contact",
         name: "Contact",
         component: Contact
     },
@@ -36,22 +36,22 @@ const routes = [
 
     //Projects
     {
-        path: "/projects/Aniseeds",
+        path: "alexandreglatz.github.io/projects/Aniseeds",
         name: "Aniseeds",
         component: Aniseeds
     },
     {
-        path: "/projects/ICF",
+        path: "alexandreglatz.github.io/projects/ICF",
         name: "ICF",
         component: ICF
     },
     {
-        path: "/projects/Read",
+        path: "alexandreglatz.github.io/projects/Read",
         name: "Read",
         component: Read
     },
     {
-        path: "/projects/Engine",
+        path: "alexandreglatz.github.io/projects/Engine",
         name: "Engine",
         component: Engine
     },
