@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue';
 import { resolve } from 'path';
 // https://vite.dev/config/
 export default defineConfig({
-    base: 'https://alexandreglatz.github.io/',
+    base: '/',
     plugins: [vue()],
     build: {
         outDir: './docs', // Ensure this matches the outDir in tsconfig.json

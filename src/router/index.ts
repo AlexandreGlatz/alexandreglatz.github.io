@@ -59,7 +59,7 @@ const routes = [
 ];
 
 const router = createRouter({
-    history: createWebHistory('/alexandreglatz.github.io/'),
+    history: createWebHistory('/'),
     routes,
 });
 
