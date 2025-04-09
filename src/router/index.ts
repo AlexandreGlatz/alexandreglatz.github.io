@@ -16,19 +16,19 @@ const routes = [
         component: About
     },
     {
-        path: "alexandreglatz.github.io/about",
+        path: "/about",
         name: "About",
         component: About
     },
 
     {
-        path: "alexandreglatz.github.io/projects",
+        path: "/projects",
         name: "Projects",
         component: Projects
     },
 
     {
-        path: "alexandreglatz.github.io/contact",
+        path: "/contact",
         name: "Contact",
         component: Contact
     },
@@ -36,22 +36,22 @@ const routes = [
 
     //Projects
     {
-        path: "alexandreglatz.github.io/projects/Aniseeds",
+        path: "/projects/Aniseeds",
         name: "Aniseeds",
         component: Aniseeds
     },
     {
-        path: "alexandreglatz.github.io/projects/ICF",
+        path: "/projects/ICF",
         name: "ICF",
         component: ICF
     },
     {
-        path: "alexandreglatz.github.io/projects/Read",
+        path: "/projects/Read",
         name: "Read",
         component: Read
     },
     {
-        path: "alexandreglatz.github.io/projects/Engine",
+        path: "/projects/Engine",
         name: "Engine",
         component: Engine
     },
@@ -59,7 +59,7 @@ const routes = [
 ];
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHistory(import.meta.env.BASE_URL),
     routes,
 });
 
