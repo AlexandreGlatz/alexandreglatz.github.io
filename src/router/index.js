@@ -51,7 +51,7 @@ const routes = [
     },
 ];
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHistory('https://alexandreglatz.github.io'),
     routes,
 });
 export default router;
