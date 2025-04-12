@@ -148,11 +148,11 @@ const __VLS_24 = {}.RouterLink;
 // @ts-ignore
 const __VLS_25 = __VLS_asFunctionalComponent(__VLS_24, new __VLS_24({
     ...{ class: "link" },
-    to: ({ name: 'About' }),
+    to: "/about",
 }));
 const __VLS_26 = __VLS_25({
     ...{ class: "link" },
-    to: ({ name: 'About' }),
+    to: "/about",
 }, ...__VLS_functionalComponentArgsRest(__VLS_25));
 __VLS_27.slots.default;
 var __VLS_27;
