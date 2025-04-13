@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from "vue-router"
+import { createRouter, createWebHistory } from "vue-router"
 import HelloWorld from "../components/pageComponents/HelloWorld.vue";
 import About from "../components/pageComponents/About.vue"
 import Projects from "../components/pageComponents/Projects.vue";
@@ -59,8 +59,16 @@ const routes = [
 ];
 
 const router = createRouter({
-    history: createWebHashHistory(),
+    history: createWebHistory(),
     routes,
 });
+
+router.beforeEach((to, from, next) => {
+    if (to.path === '/' && to.hash.startsWith('#/')) {
+      next(to.hash.substring(1))
+    } else {
+      next()
+    }
+  })
 
 export default router;
