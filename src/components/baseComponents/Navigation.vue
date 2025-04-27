@@ -9,7 +9,7 @@
                     <!-- <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li> -->
                     <li><router-link class="link" :to="{name: 'About'}">About</router-link></li>
                     <li><router-link class="link" :to="{name: 'Projects'}">Projects</router-link></li>
-                    <li><router-link class="link" :to="{name: ''}">Blog</router-link></li>
+                    <!-- <li><router-link class="link" :to="{name: ''}">Blog</router-link></li> -->
                     <li><router-link class="link-contact" :to="{name: 'Contact'}">Contact</router-link></li>
                 </ul>
                 <div class="icon">
@@ -20,7 +20,7 @@
                         <!-- <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li> -->
                         <li><router-link class="link" to="/about">About</router-link></li>
                         <li><router-link class="link" :to="{name: 'Projects'}">Projects</router-link></li>
-                        <li><router-link class="link" :to="{name: ''}">Blog</router-link></li>
+                        <!-- <li><router-link class="link" :to="{name: ''}">Blog</router-link></li> -->
                         <li><router-link class="link-contact" :to="{name: 'Contact'}">Contact</router-link></li>
                     </ul>
                 </transition>

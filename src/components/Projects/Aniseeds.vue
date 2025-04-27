@@ -34,7 +34,7 @@ export default{
                     <br>The money will help you expand your farm and therefore grow more plants.<br>This project was made in 2 weeks on Unity with two of my friends.</ProjectInformation>
             </div>
             <div class="details-media">
-                <iframe class="trailer" width="350" height="197" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- <iframe class="trailer" width="350" height="197" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                 <img src="../../assets/Projects/Aniseeds/aniseeds1.png" alt="details-image" class="details-img" width="350" height="197"> 
                 <img src="../../assets/Projects/Aniseeds/aniseeds4.png" alt="details-image" class="details-img" width="350" height="197"> 
             </div>

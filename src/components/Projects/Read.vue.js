@@ -52,15 +52,6 @@ var __VLS_3;
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({
     ...{ class: "details-media" },
 });
-__VLS_asFunctionalElement(__VLS_intrinsicElements.iframe, __VLS_intrinsicElements.iframe)({
-    ...{ class: "trailer" },
-    width: "350",
-    height: "197",
-    src: "https://www.youtube.com/embed/tgbNymZ7vqY",
-    frameborder: "0",
-    allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
-    allowfullscreen: true,
-});
 __VLS_asFunctionalElement(__VLS_intrinsicElements.img, __VLS_intrinsicElements.img)({
     src: "../../assets/Projects/Read/read1.png",
     alt: "details-image",
@@ -123,7 +114,6 @@ const __VLS_14 = __VLS_13({
 /** @type {__VLS_StyleScopedClasses['project-details']} */ ;
 /** @type {__VLS_StyleScopedClasses['details-text']} */ ;
 /** @type {__VLS_StyleScopedClasses['details-media']} */ ;
-/** @type {__VLS_StyleScopedClasses['trailer']} */ ;
 /** @type {__VLS_StyleScopedClasses['details-img']} */ ;
 /** @type {__VLS_StyleScopedClasses['details-img']} */ ;
 /** @type {__VLS_StyleScopedClasses['bottom']} */ ;

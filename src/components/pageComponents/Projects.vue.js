@@ -3,7 +3,7 @@ import MyProject from "../baseComponents/Project.vue";
 import engine from "@/assets/Projects/Engine/Engine.png";
 import read from "@/assets/Projects/Read/read.png";
 import aniseeds from "@/assets/Projects/Aniseeds/aniseedIcon1.png";
-import icf from "@/assets/Placeholder.png";
+import icf from "@/assets/Projects/ICF/ICF.webp";
 export default (await import('vue')).defineComponent({
     name: 'Project',
     components: {

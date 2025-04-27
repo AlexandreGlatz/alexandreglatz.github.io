@@ -94,29 +94,15 @@ const __VLS_12 = {}.RouterLink;
 /** @type {[typeof __VLS_components.RouterLink, typeof __VLS_components.routerLink, typeof __VLS_components.RouterLink, typeof __VLS_components.routerLink, ]} */ ;
 // @ts-ignore
 const __VLS_13 = __VLS_asFunctionalComponent(__VLS_12, new __VLS_12({
-    ...{ class: "link" },
-    to: ({ name: '' }),
+    ...{ class: "link-contact" },
+    to: ({ name: 'Contact' }),
 }));
 const __VLS_14 = __VLS_13({
-    ...{ class: "link" },
-    to: ({ name: '' }),
+    ...{ class: "link-contact" },
+    to: ({ name: 'Contact' }),
 }, ...__VLS_functionalComponentArgsRest(__VLS_13));
 __VLS_15.slots.default;
 var __VLS_15;
-__VLS_asFunctionalElement(__VLS_intrinsicElements.li, __VLS_intrinsicElements.li)({});
-const __VLS_16 = {}.RouterLink;
-/** @type {[typeof __VLS_components.RouterLink, typeof __VLS_components.routerLink, typeof __VLS_components.RouterLink, typeof __VLS_components.routerLink, ]} */ ;
-// @ts-ignore
-const __VLS_17 = __VLS_asFunctionalComponent(__VLS_16, new __VLS_16({
-    ...{ class: "link-contact" },
-    to: ({ name: 'Contact' }),
-}));
-const __VLS_18 = __VLS_17({
-    ...{ class: "link-contact" },
-    to: ({ name: 'Contact' }),
-}, ...__VLS_functionalComponentArgsRest(__VLS_17));
-__VLS_19.slots.default;
-var __VLS_19;
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({
     ...{ class: "icon" },
 });
@@ -126,33 +112,47 @@ __VLS_asFunctionalElement(__VLS_intrinsicElements.i, __VLS_intrinsicElements.i)(
     ...{ class: ({ 'icon-active fa-solid fa-bars-staggered': __VLS_ctx.mobileNav }) },
 });
 __VLS_asFunctionalDirective(__VLS_directives.vShow)(null, { ...__VLS_directiveBindingRestFields, value: (__VLS_ctx.mobile) }, null, null);
-const __VLS_20 = {}.transition;
+const __VLS_16 = {}.transition;
 /** @type {[typeof __VLS_components.Transition, typeof __VLS_components.transition, typeof __VLS_components.Transition, typeof __VLS_components.transition, ]} */ ;
 // @ts-ignore
-const __VLS_21 = __VLS_asFunctionalComponent(__VLS_20, new __VLS_20({
+const __VLS_17 = __VLS_asFunctionalComponent(__VLS_16, new __VLS_16({
     name: "mobile-nav",
     persisted: true,
 }));
-const __VLS_22 = __VLS_21({
+const __VLS_18 = __VLS_17({
     name: "mobile-nav",
     persisted: true,
-}, ...__VLS_functionalComponentArgsRest(__VLS_21));
-__VLS_23.slots.default;
+}, ...__VLS_functionalComponentArgsRest(__VLS_17));
+__VLS_19.slots.default;
 __VLS_asFunctionalElement(__VLS_intrinsicElements.ul, __VLS_intrinsicElements.ul)({
     ...{ class: "dropdown-nav" },
 });
 __VLS_asFunctionalDirective(__VLS_directives.vShow)(null, { ...__VLS_directiveBindingRestFields, value: (__VLS_ctx.mobileNav) }, null, null);
+__VLS_asFunctionalElement(__VLS_intrinsicElements.li, __VLS_intrinsicElements.li)({});
+const __VLS_20 = {}.RouterLink;
+/** @type {[typeof __VLS_components.RouterLink, typeof __VLS_components.routerLink, typeof __VLS_components.RouterLink, typeof __VLS_components.routerLink, ]} */ ;
+// @ts-ignore
+const __VLS_21 = __VLS_asFunctionalComponent(__VLS_20, new __VLS_20({
+    ...{ class: "link" },
+    to: "/about",
+}));
+const __VLS_22 = __VLS_21({
+    ...{ class: "link" },
+    to: "/about",
+}, ...__VLS_functionalComponentArgsRest(__VLS_21));
+__VLS_23.slots.default;
+var __VLS_23;
 __VLS_asFunctionalElement(__VLS_intrinsicElements.li, __VLS_intrinsicElements.li)({});
 const __VLS_24 = {}.RouterLink;
 /** @type {[typeof __VLS_components.RouterLink, typeof __VLS_components.routerLink, typeof __VLS_components.RouterLink, typeof __VLS_components.routerLink, ]} */ ;
 // @ts-ignore
 const __VLS_25 = __VLS_asFunctionalComponent(__VLS_24, new __VLS_24({
     ...{ class: "link" },
-    to: "/about",
+    to: ({ name: 'Projects' }),
 }));
 const __VLS_26 = __VLS_25({
     ...{ class: "link" },
-    to: "/about",
+    to: ({ name: 'Projects' }),
 }, ...__VLS_functionalComponentArgsRest(__VLS_25));
 __VLS_27.slots.default;
 var __VLS_27;
@@ -161,48 +161,19 @@ const __VLS_28 = {}.RouterLink;
 /** @type {[typeof __VLS_components.RouterLink, typeof __VLS_components.routerLink, typeof __VLS_components.RouterLink, typeof __VLS_components.routerLink, ]} */ ;
 // @ts-ignore
 const __VLS_29 = __VLS_asFunctionalComponent(__VLS_28, new __VLS_28({
-    ...{ class: "link" },
-    to: ({ name: 'Projects' }),
+    ...{ class: "link-contact" },
+    to: ({ name: 'Contact' }),
 }));
 const __VLS_30 = __VLS_29({
-    ...{ class: "link" },
-    to: ({ name: 'Projects' }),
+    ...{ class: "link-contact" },
+    to: ({ name: 'Contact' }),
 }, ...__VLS_functionalComponentArgsRest(__VLS_29));
 __VLS_31.slots.default;
 var __VLS_31;
-__VLS_asFunctionalElement(__VLS_intrinsicElements.li, __VLS_intrinsicElements.li)({});
-const __VLS_32 = {}.RouterLink;
-/** @type {[typeof __VLS_components.RouterLink, typeof __VLS_components.routerLink, typeof __VLS_components.RouterLink, typeof __VLS_components.routerLink, ]} */ ;
-// @ts-ignore
-const __VLS_33 = __VLS_asFunctionalComponent(__VLS_32, new __VLS_32({
-    ...{ class: "link" },
-    to: ({ name: '' }),
-}));
-const __VLS_34 = __VLS_33({
-    ...{ class: "link" },
-    to: ({ name: '' }),
-}, ...__VLS_functionalComponentArgsRest(__VLS_33));
-__VLS_35.slots.default;
-var __VLS_35;
-__VLS_asFunctionalElement(__VLS_intrinsicElements.li, __VLS_intrinsicElements.li)({});
-const __VLS_36 = {}.RouterLink;
-/** @type {[typeof __VLS_components.RouterLink, typeof __VLS_components.routerLink, typeof __VLS_components.RouterLink, typeof __VLS_components.routerLink, ]} */ ;
-// @ts-ignore
-const __VLS_37 = __VLS_asFunctionalComponent(__VLS_36, new __VLS_36({
-    ...{ class: "link-contact" },
-    to: ({ name: 'Contact' }),
-}));
-const __VLS_38 = __VLS_37({
-    ...{ class: "link-contact" },
-    to: ({ name: 'Contact' }),
-}, ...__VLS_functionalComponentArgsRest(__VLS_37));
-__VLS_39.slots.default;
-var __VLS_39;
-var __VLS_23;
+var __VLS_19;
 /** @type {__VLS_StyleScopedClasses['header-bg']} */ ;
 /** @type {__VLS_StyleScopedClasses['branding']} */ ;
 /** @type {__VLS_StyleScopedClasses['navigation']} */ ;
-/** @type {__VLS_StyleScopedClasses['link']} */ ;
 /** @type {__VLS_StyleScopedClasses['link']} */ ;
 /** @type {__VLS_StyleScopedClasses['link']} */ ;
 /** @type {__VLS_StyleScopedClasses['link-contact']} */ ;
@@ -213,7 +184,6 @@ var __VLS_23;
 /** @type {__VLS_StyleScopedClasses['fa-solid']} */ ;
 /** @type {__VLS_StyleScopedClasses['fa-bars-staggered']} */ ;
 /** @type {__VLS_StyleScopedClasses['dropdown-nav']} */ ;
-/** @type {__VLS_StyleScopedClasses['link']} */ ;
 /** @type {__VLS_StyleScopedClasses['link']} */ ;
 /** @type {__VLS_StyleScopedClasses['link']} */ ;
 /** @type {__VLS_StyleScopedClasses['link-contact']} */ ;

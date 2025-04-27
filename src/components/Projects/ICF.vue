@@ -32,16 +32,16 @@ export default{
                 </ProjectInformation>
             </div>
             <div class="details-media">
-                <iframe class="trailer" width="350" height="197" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <img src="../../assets/Placeholder.png" alt="details-image" class="details-img" width="350" height="197"> 
-                <img src="../../assets/Placeholder.png" alt="details-image" class="details-img" width="350" height="197"> 
+                <!-- <iframe class="trailer" width="350" height="197" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                <!-- <img src="../../assets/Placeholder.png" alt="details-image" class="details-img" width="350" height="197">  -->
+                <!-- <img src="../../assets/Placeholder.png" alt="details-image" class="details-img" width="350" height="197">  -->
             </div>
         </div>
         <div class="bottom">
             <p class="link-pres">Also on :</p>
             <div class="link-container">
-                <MyLink name="Itch.io" link="https://strickster.itch.io/aniseeds" icon-class="fa-brands fa-itch-io"/>
-                <MyLink name="Github" link="https://github.com/AlexandreGlatz/GC_Unity" icon-class="fa-brands fa-github"/>
+                <!-- <MyLink name="Itch.io" link="https://strickster.itch.io/aniseeds" icon-class="fa-brands fa-itch-io"/> -->
+                <MyLink name="Github" link="https://github.com/AlexandreGlatz/I_cast_fireball" icon-class="fa-brands fa-github"/>
             </div>
             <Category category-name="Languages" :tag-name="languages"/>
             <Category category-name="Engine" :tag-name="engine"/>
