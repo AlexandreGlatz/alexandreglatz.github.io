@@ -16,9 +16,9 @@ import Presentation from "../baseComponents/Presentation.vue";
 <template>
     <div class="about">
         <div class="info">
-            <Presentation>Welcome, I am a Technical Artist and Game Developer</Presentation>
+            <Presentation>Welcome, I am a Graphics Developer and Technical Artist</Presentation>
             <div class="job-header">
-                <h1 class="job-title">Alexandre Glatz Technical Artist</h1>
+                <h1 class="job-title">Alexandre Glatz,<br> Graphics Developer</h1>
                 <div class="pic-quote">
                     <div class="profile-pic">
                         <img class="pic" src="../../assets/GLATZ Alexandre -2.png" alt="Profile Picture" width="150" height="150"/>
@@ -50,8 +50,8 @@ import Presentation from "../baseComponents/Presentation.vue";
                     about mainstream engines and loved creating my little games
                 </p>
             </div>
+            <h1 class="article-title">My links</h1>
             <div class="link-container">
-                <p class="article-title">My links</p>
                 <MyLink name="LinkedIn" link="https://www.linkedin.com/in/alexandre-glatz/" icon-class="fa-brands fa-linkedin"/>
                 <MyLink name="Artstation" link="https://alexandreglatz.artstation.com/" icon-class="fa-brands fa-artstation"/>
                 <MyLink name="Itch.io" link="https://strickster.itch.io/" icon-class="fa-brands fa-itch-io"/>
@@ -95,6 +95,7 @@ import Presentation from "../baseComponents/Presentation.vue";
 }
 
 .job-header {
+    justify-content: space-between;
     display: inline-flex;
     align-items: center;
     flex-direction: column;
@@ -122,12 +123,11 @@ import Presentation from "../baseComponents/Presentation.vue";
 }
 
 .pic-quote {
-    display: flexbox;
-    align-items: center;
+    display: block;
+    text-align: center;
 }
 .profile-pic {
-    margin-left: 50px;
-    margin-top:   10px;
+    margin: 0 auto;
     margin-bottom: 20px;
     width: 150px;
     height : 150px;
@@ -180,6 +180,8 @@ import Presentation from "../baseComponents/Presentation.vue";
     }
 }
 
-
+.link-container {
+    margin-top: 20px;
+}
 </style>
   
