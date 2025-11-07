@@ -41,6 +41,7 @@ __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.d
 __VLS_asFunctionalElement(__VLS_intrinsicElements.h1, __VLS_intrinsicElements.h1)({
     ...{ class: "job-title" },
 });
+__VLS_asFunctionalElement(__VLS_intrinsicElements.br, __VLS_intrinsicElements.br)({});
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({
     ...{ class: "pic-quote" },
 });
@@ -102,11 +103,11 @@ __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.d
 __VLS_asFunctionalElement(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)({
     ...{ class: "desc" },
 });
+__VLS_asFunctionalElement(__VLS_intrinsicElements.h1, __VLS_intrinsicElements.h1)({
+    ...{ class: "article-title" },
+});
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({
     ...{ class: "link-container" },
-});
-__VLS_asFunctionalElement(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)({
-    ...{ class: "article-title" },
 });
 const __VLS_8 = {}.MyLink;
 /** @type {[typeof __VLS_components.MyLink, ]} */ ;
@@ -209,7 +210,7 @@ const __VLS_34 = __VLS_33({}, ...__VLS_functionalComponentArgsRest(__VLS_33));
 /** @type {__VLS_StyleScopedClasses['article-text']} */ ;
 /** @type {__VLS_StyleScopedClasses['side']} */ ;
 /** @type {__VLS_StyleScopedClasses['desc']} */ ;
-/** @type {__VLS_StyleScopedClasses['link-container']} */ ;
 /** @type {__VLS_StyleScopedClasses['article-title']} */ ;
+/** @type {__VLS_StyleScopedClasses['link-container']} */ ;
 var __VLS_dollars;
 let __VLS_self;
