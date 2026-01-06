@@ -21,7 +21,7 @@
                         <li><RouterLink class="link" to="/about">About</RouterLink></li>
                         <li><RouterLink class="link" to="/projects">Projects</RouterLink></li>
                         <!-- <li><RouterLink class="link" :to="{name: ''}">Blog</RouterLink></li> -->
-                        <li><RouterLink class="link-contact" to="{name: 'Contact'}">Contact</RouterLink></li>
+                        <li><RouterLink class="link-contact" to="/contact">Contact</RouterLink></li>
                     </ul>
                 </transition>
             </nav>
