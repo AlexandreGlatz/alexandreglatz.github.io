@@ -4,11 +4,10 @@ import Copyright from '../Copyright.vue';
 import MyLink from '../Link.vue';
 import ProjectInformation from '../ProjectInformation.vue';
 
-const languages:Array<string> = ["C#"];
-const engine:Array<string> = ["Unity"];
-const tags:Array<string> = ["Unity", "2D", "farm", "game", "project", "C#", "UnityEngine"];
+const languages:Array<string> = ["C++", "hlsl"];
+const tags:Array<string> = ["DirectX", "DirectX12", "hlsl", "graphics", "shaders", "optimization", "Custom Engine"];
 export default{
-    name:'Aniseeds',
+    name:'Engine',
     components: {
         Category,
         ProjectInformation,
@@ -17,7 +16,6 @@ export default{
     },
     data() {
         return {
-            engine,
             tags,
             languages
         }
@@ -29,24 +27,21 @@ export default{
     <div class="project-page">
         <div class="project-details">
             <div class="details-text">
-                <ProjectInformation title="Aniseeds">Aniseeds is a 2D game with top down and side view containing farming, a simple economy system and adventure.<br>In this game the player will farm crops from the animals it captures and then harvest it.<br>
-                    You will have 4 different world to venture coming with 4 animals, one for each world, to plant and harvest at your farm.
-                    <br>The money will help you expand your farm and therefore grow more plants.<br>This project was made in 2 weeks on Unity with two of my friends.</ProjectInformation>
+                <ProjectInformation title="DirectX12 Engine">This custom Engine was made in 3 weeks for a school project. We had to make an engine with the DirectX12 API. I was in charge of the graphics part and optimization. I had to create a render with DirectX and encapsulate it for my collaborators to use.<br>
+                So I created a whole architecture to manage the render pipeline with basic renders as 3d objects with colors. Then added shaders for texture and lighting.</ProjectInformation>
             </div>
             <div class="details-media">
-                <!-- <iframe class="trailer" width="350" height="197" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                <img src="../../assets/Projects/Aniseeds/aniseeds1.png" alt="details-image" class="details-img" width="350" height="197"> 
-                <img src="../../assets/Projects/Aniseeds/aniseeds4.png" alt="details-image" class="details-img" width="350" height="197"> 
+                <iframe class="trailer" width="350" height="197" src="https://www.youtube.com/embed/jFl7T8v4fHE?autoplay=1&mute=1&loop=1&controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img src="../../assets/Projects/Engine/Engine1.png" alt="details-image" class="details-img" width="350" height="197"> 
+                <img src="../../assets/Projects/Engine/Engine2.png" alt="details-image" class="details-img" width="350" height="197"> 
             </div>
         </div>
         <div class="bottom">
             <p class="link-pres">Also on :</p>
             <div class="links-container">
-                <MyLink name="Itch.io" link="https://strickster.itch.io/aniseeds" icon-class="fa-brands fa-itch-io"/>
-                <MyLink name="Github" link="https://github.com/AlexandreGlatz/GC_Unity" icon-class="fa-brands fa-github"/>
+                <MyLink name="Github" link="https://github.com/EliaMaillard-Salin/Custom-Engine" icon-class="fa-brands fa-github"/>
             </div>
             <Category category-name="Languages" :tag-name="languages"/> 
-            <Category category-name="Engine" :tag-name="engine"/>
             <Category category-name="Tags" :tag-name="tags"/> 
         </div>
     </div>
@@ -65,8 +60,8 @@ export default{
     font-weight: 700;
     width: 80%;
     margin: 0 auto;
+    margin-bottom: -50px;
     margin-top: 200px;
-    margin-bottom: 100px;
     border-radius: 10px;
     background-color: rgba(0.0,0.0,0.0,0.3);
     padding: 20px;
@@ -127,12 +122,10 @@ export default{
 
 .link-pres {
     margin-bottom: 30px;
-
     .links-container {
         text-align: left;
     }
 }
-
 
 .article-text {
     text-align: center;
