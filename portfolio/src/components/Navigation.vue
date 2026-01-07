@@ -10,7 +10,7 @@
                     <li><RouterLink class="link" to="/about">About</RouterLink></li>
                     <li><RouterLink class="link" to="/projects">Projects</RouterLink></li>
                     <!-- <li><RouterLink class="link" :to="{name: ''}">Blog</RouterLink></li> -->
-                    <li><RouterLink class="link-contact" to="/contact">Contact</RouterLink></li>
+                    <li><a href="mailto:alexandre.glatzpro@gmail.com" target="_blank" class="link-contact" to="/contact">Contact</a></li>
                 </ul>
                 <div class="icon">
                     <i @click="toggleMobileNavFunc" v-show="mobile" class="fa-solid fa-bars" :class="{'icon-active fa-solid fa-bars-staggered' : mobileNav}"></i>
@@ -21,7 +21,7 @@
                         <li><RouterLink class="link" to="/about">About</RouterLink></li>
                         <li><RouterLink class="link" to="/projects">Projects</RouterLink></li>
                         <!-- <li><RouterLink class="link" :to="{name: ''}">Blog</RouterLink></li> -->
-                        <li><RouterLink class="link-contact" to="/contact">Contact</RouterLink></li>
+                        <li><a href="mailto:alexandre.glatzpro@gmail.com" target="_blank" class="link-contact" to="/contact">Contact</a></li>
                     </ul>
                 </transition>
             </nav>
